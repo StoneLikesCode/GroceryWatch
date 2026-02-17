@@ -114,12 +114,14 @@
         background: #222729;
         padding: 1rem;
         border-radius: 8px;
+        max-width: 50%;
     }
 
     /* show menu when active */
     #nav ul.active {
         display: flex;
         align-items: center;
+        margin: 1rem auto 0 auto;
     }
 
     /* show hamburger menu */ 
