@@ -1,14 +1,25 @@
-<script>
-    $(function(){
-        $("#nav").load("nav.html");
-    });
-</script>
-
 <!-- Change this to change header -->
-<header>
-    <h1>Team Iron Ugly Website</h1>
-    <h2>Grocery Watch</h2>
-    <h4>Shop Smart, Eat Well</h4>
-    <p>PH for project image</p>
-    <div id="nav"></div>
+<header class="site-header">
+    <div id="header-container">
+        <h1>Grocery Watch</h1>
+        <h2>Team Iron</h2>
+        <p class="tagline">Shop Smart, Eat Well</p>
+    </div>
+    <!-- Navigation Buttons nested within header.html -->
+    <nav id="nav"> 
+                <ul class="nav-menu">
+                    <li><a id="nav-team" href="team.html">Team</a></li>
+                    <li><a id="nav-problem" href="problem.html">Problem</a></li>
+                    <li><a id="nav-solution" href="solution.html">Solution</a></li>
+                    <li><a id="nav-presentation" href="presentations.html">Presentations</a></li>
+                    <li><a id="nav-deliverables" href="deliverables.html">Deliverables</a></li>
+                    <li><a id="nav-references" href="references.html">References</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>    
+    </nav>
+</div>
 </header>

@@ -1,0 +1,129 @@
+:root{ 
+    /* variable for the green accent color changing this will change the accents of the website */
+    --sitegreen: #4ba173;
+}
+.site-header{ 
+    background: linear-gradient(135deg, #222729ff, #334155);
+    color: #ffffff;
+    padding: 2rem 1rem;
+    border-bottom: 4px solid var(--sitegreen);
+}
+#header-container{ 
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* lettering */ 
+.site-header h1{ 
+    font-size: 2.5rem; 
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.site-header h2{ 
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.site-header .tagline { 
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--sitegreen);
+}
+
+/* nav bar */
+#nav { 
+    margin-top: 1.5rem;
+}
+
+#nav ul{ 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#nav a{ 
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: 500;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    transition: background 0.2s ease, color 0.2 ease;
+}
+
+#nav a:hover { 
+    background: var(--sitegreen);
+    color: #ffffff;
+}
+
+/* hamburger menu */ 
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 1rem;
+    max-width: fit-content;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.hamburger:hover{
+    .bar{
+        background-color: var(--sitegreen);   
+    }
+}
+
+/* hamburger animation */ 
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* mobile */
+@media (max-width: 768px){ 
+    .site-header h1{
+        font-size: 2rem;
+    }
+
+    /* hide menu by default */
+    #nav ul { 
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+        background: #222729;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    /* show menu when active */
+    #nav ul.active {
+        display: flex;
+    }
+
+    /* show hamburger menu */ 
+    .hamburger{ 
+        display: flex;
+        margin: 1rem auto 0 auto;
+    }
+}
