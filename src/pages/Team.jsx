@@ -14,7 +14,7 @@ export default function Team(){
             <Member 
                 name="Stone Casey" 
                 role="Web Master" 
-                bio="BIO NEEDED" />
+                bio="Stone is a Computer Science student at ODU with a passion for web development and game development. When he's not coding, you can find him painting, playing tabletop games, or spending time with his dog and cat." />
             <Member 
                 name="Blaine" 
                 role="ROLE NEEDED" 
