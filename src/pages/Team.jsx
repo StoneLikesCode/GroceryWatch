@@ -1,6 +1,12 @@
 import Member from '../components/Member'
 import PageHeader from '../components/PageHeader'
 import styles from './Team.module.css'
+import StoneImage from '../assets/Stone.jpg'
+import SamImage from '../assets/Sam.jpg'
+import JordanImage from '../assets/Jordan.jpg'
+import JoeImage from '../assets/Joe.jpg'
+import AaronImage from '../assets/Aaron.jpg'
+import BlaineImage from '../assets/Blaine.jpg'
 
 export default function Team(){ 
     return(
@@ -10,27 +16,33 @@ export default function Team(){
             <Member 
                 name="Sam Garden" 
                 role="Database Lead" 
-                bio="Sam Garden is a Senior Computer Science major at ODU. She plans on pursuing a masters in Cybersecurity once she is done with her bachelor's. She plays on the field hockey team and loves to hike and loves fitness." />
+                bio="Sam Garden is a Senior Computer Science major at ODU. She plans on pursuing a masters in Cybersecurity once she is done with her bachelor's. She plays on the field hockey team and loves to hike and loves fitness."
+                src={SamImage}/>
             <Member 
                 name="Stone Casey" 
                 role="Web Master" 
-                bio="Stone is a Computer Science student at ODU with a passion for web development and game development. When he's not coding, you can find him painting, playing tabletop games, or spending time with his dog and cat." />
+                bio="Stone is a Computer Science student at ODU with a passion for web development and game development. When he's not coding, you can find him painting, playing tabletop games, or spending time with his dog and cat."
+                src={StoneImage}/>
             <Member 
                 name="Blaine" 
                 role="ROLE NEEDED" 
-                bio="BIO NEEDED" />
+                bio="BIO NEEDED"
+                src={BlaineImage}/>
             <Member 
                 name="Aaron" 
                 role="ROLE NEEDED" 
-                bio="BIO NEEDED" />
+                bio="BIO NEEDED"
+                src={AaronImage}/>
             <Member 
-                name="Joe" 
-                role="ROLE NEEDED" 
-                bio="BIO NEEDED" />
+                name="Joseph Thompson" 
+                role="Documentation Specialist" 
+                bio="BIO NEEDED"
+                src={JoeImage}/>
             <Member 
                 name="Jordan" 
                 role="ROLE NEEDED" 
-                bio="BIO NEEDED" />
+                bio="BIO NEEDED"
+                src={JordanImage}/>
         </div>
     </>
     )
