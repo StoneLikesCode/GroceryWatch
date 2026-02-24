@@ -1,0 +1,24 @@
+.siteHeader {
+    width: 100%;
+    background: linear-gradient(135deg, #222729, #334155);
+    color: #ffffff;
+    padding: 4rem 1rem;
+    border-bottom: 4px solid var(--sitegreen);
+}
+
+.headerContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Typography */
+.siteHeader h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.siteHeader p {
+    font-size: 1.2rem;
+}

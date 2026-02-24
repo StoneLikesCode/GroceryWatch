@@ -1,0 +1,22 @@
+:root {
+    /* variable for the green accent color changing this will change the accents of the website */
+    --sitegreen: #4ba173;
+    --backgroundColor: #222729;
+    --textColor: #ffffff;
+}
+
+/* CSS reset to reset broswer styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{ 
+  background-color: var(--backgroundColor);
+  overflow-x: hidden;
+}
+
+p, h1, h2, h3, h4, h5{
+  color: var(--textColor);
+}
