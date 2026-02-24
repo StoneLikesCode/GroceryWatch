@@ -1,4 +1,4 @@
-import PageHeader from "../components/pageHeader"
+import PageHeader from "../components/PageHeader"
 import styles from '../pages/Presentations.module.css'
 
 export default function Presentations(){

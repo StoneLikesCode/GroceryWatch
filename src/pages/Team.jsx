@@ -1,5 +1,5 @@
 import Member from '../components/Member'
-import PageHeader from '../components/pageHeader'
+import PageHeader from '../components/PageHeader'
 import styles from './Team.module.css'
 
 export default function Team(){ 
