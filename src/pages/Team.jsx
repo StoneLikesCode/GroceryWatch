@@ -26,7 +26,7 @@ export default function Team(){
             <Member 
                 name="Blaine" 
                 role="ROLE NEEDED" 
-                bio="BIO NEEDED"
+                bio="Blaine is  a Senior Computer Science major at ODU. He is interested in pursuing a career in software engineering after graduation. In his free time, Blaine enjoys both playing and developing video games."
                 src={BlaineImage}/>
             <Member 
                 name="Aaron" 
