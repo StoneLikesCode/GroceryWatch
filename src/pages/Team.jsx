@@ -29,9 +29,9 @@ export default function Team(){
                 bio="Blaine is  a Senior Computer Science major at ODU. He is interested in pursuing a career in software engineering after graduation. In his free time, Blaine enjoys both playing and developing video games."
                 src={BlaineImage}/>
             <Member 
-                name="Aaron" 
-                role="ROLE NEEDED" 
-                bio="BIO NEEDED"
+                name="Aaron Breslin" 
+                role="Backend Developer" 
+                bio="Aaron is a Senior Computer Science major at ODU. He is also studying for a minor in Computer Engineering. In his free time he enjoys reading books and playing both board games and video games with friends."
                 src={AaronImage}/>
             <Member 
                 name="Joseph Thompson" 
