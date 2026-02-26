@@ -36,7 +36,7 @@ export default function Team(){
             <Member 
                 name="Joseph Thompson" 
                 role="Documentation Specialist" 
-                bio="BIO NEEDED"
+                bio="Joseph is a Senior Computer Science major at ODU. He has already earned a Masters in Electrical Engineering (ODU Spring 2019). He works full time in DRAM manufacturing as a Senior Engineer. When he's not working or studying, he's behind the wheel of his GR86 doing Autocross events, or he's hanging out at home playing Xbox."
                 src={JoeImage}/>
             <Member 
                 name="Jordan" 
