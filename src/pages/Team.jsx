@@ -21,7 +21,7 @@ export default function Team(){
             <Member 
                 name="Stone Casey" 
                 role="Web Master" 
-                bio="Stone is a Senior Computer Science student at ODU with a passion for web development and game development. When he's not coding, you can find him painting, playing tabletop games, or spending time with his dog and cat."
+                bio="Stone is a Senior Computer Science test student at ODU with a passion for web development and game development. When he's not coding, you can find him painting, playing tabletop games, or spending time with his dog and cat."
                 src={StoneImage}/>
             <Member 
                 name="Blaine" 
