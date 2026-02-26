@@ -40,8 +40,8 @@ export default function Team(){
                 src={JoeImage}/>
             <Member 
                 name="Jordan" 
-                role="ROLE NEEDED" 
-                bio="BIO NEEDED"
+                role="Cross-Referencer" 
+                bio="Jordan is a Senior Computer Science major at ODU. He has background in Mathematics, Biology, and Organic Chemistry. He is pursuing a Master's Degree in Computer Science and hopes to join a top tech company."
                 src={JordanImage}/>
         </div>
     </>
