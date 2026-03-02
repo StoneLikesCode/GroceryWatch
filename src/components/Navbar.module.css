@@ -34,6 +34,7 @@
 
 .navMenu a {
     text-decoration: none;
+    padding: 5px;
     color: var(--textColor);
     font-weight: 500;
     transition: color 0.2s ease;
@@ -48,7 +49,6 @@
 }
 
 .navMenu a:hover {
-    padding: 5px;
     border-radius: 10px;
     background-color: var(--sitegreen);
 }

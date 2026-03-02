@@ -25,15 +25,17 @@ export default function Navbar() {
                 </div>
 
                 <ul className={`${styles.navMenu} ${isOpen ? styles.show : ""}`}>
-                    <Dropdown label="Home" links={[]}></Dropdown>
+                    <NavLink className={navLinkClass} to='/'>Home</NavLink>
+                    
                     <Dropdown
                         label="About"
                         links={[
                             {to: "/team", label:"Team"},
                             {to: "/problem", label:"Problem"},
                             {to: "/solution", label:"Solution"}
-                        ]}>
-                    </Dropdown>
+                        ]}
+                    />
+                    
                     <Dropdown
                         label="Presentations"
                         links={[
@@ -42,8 +44,15 @@ export default function Navbar() {
                             {to: "/presentation3", label: "Presentation 3"},
                         ]}
                     />
-
-                    <li><NavLink className={navLinkClass} to="/deliverables">Deliverables</NavLink></li>
+                    <Dropdown
+                        label="Deliverables"
+                        links={[
+                            {to: "/processflows", label: "Process Flows"},
+                            {to: "/mfcd", label: "Major Functional Components Diagram (MFCD)"},
+                            {to: "/competitionmatrix", label: "Competition Matrix"},
+                            {to: "/riskmatrices", label: "Risk Matrices"},
+                        ]}
+                    />
                     <li><NavLink className={navLinkClass} to="/references">References</NavLink></li>
                 </ul>
             </nav>
