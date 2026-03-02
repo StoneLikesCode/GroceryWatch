@@ -2,8 +2,8 @@ import {HashRouter, Routes, Route} from "react-router-dom"
 import Navbar from './components/Navbar'
 import Landing from './pages/Landing'
 import Team from './pages/Team'
-import Problem from  './pages/Problem'
-import Solution from './pages/Solution'
+import Problem from  './components/Problem'
+import Solution from './components/Solution'
 import Deliverables from "./pages/Deliverables"
 import References from "./pages/References"
 import Presentations from "./pages/Presentations"
