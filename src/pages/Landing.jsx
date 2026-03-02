@@ -1,5 +1,8 @@
 import LandingHeader from "../components/LandingHeader.jsx"
 import styles from '../pages/Landing.module.css'
+import Problem from "../components/Problem.jsx"
+import Solution from "../components/Solution.jsx"
+
 export default function Landing(){
     return(
         <>
@@ -7,7 +10,8 @@ export default function Landing(){
         
         <div className={styles.mainContent}>
             <h1>Landing Page</h1>
-            <p>Landing page content</p>
+            <Problem></Problem>
+            <Solution></Solution>
         </div>
     </>
     )
