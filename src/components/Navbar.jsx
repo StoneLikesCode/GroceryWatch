@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import {HashLink} from 'react-router-hash-link'
 import styles from './Navbar.module.css'
 import siteLogo from '../assets/logo.png'
 import Dropdown from './Dropdown'
@@ -25,41 +26,49 @@ export default function Navbar() {
                 </div>
 
                 <ul className={`${styles.navMenu} ${isOpen ? styles.show : ""}`}>
-                    <NavLink className={navLinkClass} to='/'>Home</NavLink>
+                    <li><NavLink className={styles.navLink} to='/'>Home</NavLink></li>
                     
-                    <Dropdown
-                        label="About"
-                        links={[
-                            {to: "/team", label:"Team"},
-                            {to: "/problem", label:"Problem"},
-                            {to: "/solution", label:"Solution"}
-                        ]}
-                    />
+                    <li>
+                        <Dropdown
+                            label="About"
+                            links={[
+                                {to: "/team", label:"Team"},
+                                {to: "/#problem", label:"Problem"},
+                                {to: "/#solution", label:"Solution"}
+                            ]}
+                        />
+                    </li>
                     
-                    <Dropdown
-                        label="Presentations"
-                        links={[
-                            {to: "/presentation1", label: "Presentation 1"},
-                            {to: "/presentation2", label: "Presentation 2"},
-                            {to: "/presentation3", label: "Presentation 3"},
-                        ]}
-                    />
-                    <Dropdown
-                        label="Deliverables"
-                        links={[
-                            {to: "/processflows", label: "Process Flows"},
-                            {to: "/mfcd", label: "Major Functional Components Diagram (MFCD)"},
-                            {to: "/competitionmatrix", label: "Competition Matrix"},
-                            {to: "/riskmatrices", label: "Risk Matrices"},
-                        ]}
-                    />
-                    <Dropdown
-                        label="Resources"
-                        links={[
-                            {to: "/glossary", label: "Glossary"},
-                            {to: "/references", label: "References"},
-                        ]}
-                    />
+                    <li>
+                        <Dropdown
+                            label="Presentations"
+                            links={[
+                                {to: "/presentation1", label: "Presentation 1"},
+                                {to: "/presentation2", label: "Presentation 2"},
+                                {to: "/presentation3", label: "Presentation 3"},
+                            ]}
+                        />
+                    </li>
+                    <li>
+                        <Dropdown
+                            label="Deliverables"
+                            links={[
+                                {to: "/processflows", label: "Process Flows"},
+                                {to: "/mfcd", label: "Major Functional Components Diagram (MFCD)"},
+                                {to: "/competitionmatrix", label: "Competition Matrix"},
+                                {to: "/riskmatrices", label: "Risk Matrices"},
+                            ]}
+                        />
+                    </li>
+                    <li>
+                        <Dropdown
+                            label="Resources"
+                            links={[
+                                {to: "/glossary", label: "Glossary"},
+                                {to: "/references", label: "References"},
+                            ]}
+                        />
+                    </li>
                 </ul>
             </nav>
         </>

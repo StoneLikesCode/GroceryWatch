@@ -32,27 +32,23 @@
     padding: 0;
 }
 
-.navMenu a {
+.navMenu li {
+    display:flex;
+    align-items: center;
+}
+
+.navLink {
     text-decoration: none;
-    padding: 5px;
+    padding: 5px 8px;
+    border-radius: 10px;
     color: var(--textColor);
     font-weight: 500;
-    transition: color 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
-.navMenu a.active { 
-    color: var(--sitegreen);
-}
-
-.navMenu a.active:hover{
-    color: var(--textColor);
-}
-
-.navMenu a:hover {
-    border-radius: 10px;
+.navLink:hover {
     background-color: var(--sitegreen);
 }
-
 
 /* Hamburger */
 .hamburger {
@@ -140,13 +136,13 @@
         border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
-    .navMenu li a {
+    .navLink {
         display: block;
         padding: 1rem 0;
         font-size: 1.1rem;
     }
 
-    .navMenu a:hover {
+    .navLink:hover{
         padding: 1rem 0.75rem;
         border-radius: 8px;
     }

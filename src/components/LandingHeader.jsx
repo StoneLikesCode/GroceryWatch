@@ -6,7 +6,7 @@ export default function LandingHeader(props){
         <div className={styles.siteHeader}>
             <div className={styles.headerContainer}>
                 <h1>{props.title}</h1>
-                <p>{props.description}</p>
+                <p>{props.tagline}</p>
             </div>
         </div>
         </>
