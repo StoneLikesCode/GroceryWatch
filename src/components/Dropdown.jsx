@@ -9,7 +9,7 @@ export default function Dropdown(props){
         <>
         <div
             className={styles.dropdown}
-            onMouseEnter={() => setIsOpen(true)}
+            onMouseEnter={() => props.links?.length > 0 && setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
         >
             <button
@@ -18,13 +18,15 @@ export default function Dropdown(props){
                 >
                     {props.label}
                 </button>
+                {props.links && props.links.length > 1 && (
                 <div 
-                className={`${styles.dropdownContent} ${isOpen ? styles.show : ""}`}
-                onMouseEnter={() =>setIsOpen(true)}>
-                    {props.links.map(link => (
-                        <NavLink key={link.to} to={link.to}>{link.label}</NavLink>
-                    ))}
-                </div>
+                    className={`${styles.dropdownContent} ${isOpen ? styles.show : ""}`}
+                    onMouseEnter={() =>setIsOpen(true)}>
+                        {props.links.map(link => (
+                            <NavLink key={link.to} to={link.to}>{link.label}</NavLink>
+                        ))}
+                    </div>
+                )}
             </div>
         </>
     )
