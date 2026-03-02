@@ -53,7 +53,13 @@ export default function Navbar() {
                             {to: "/riskmatrices", label: "Risk Matrices"},
                         ]}
                     />
-                    <li><NavLink className={navLinkClass} to="/references">References</NavLink></li>
+                    <Dropdown
+                        label="Resources"
+                        links={[
+                            {to: "/glossary", label: "Glossary"},
+                            {to: "/references", label: "References"},
+                        ]}
+                    />
                 </ul>
             </nav>
         </>
