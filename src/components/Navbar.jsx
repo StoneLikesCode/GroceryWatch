@@ -25,6 +25,7 @@ export default function Navbar() {
                 </div>
 
                 <ul className={`${styles.navMenu} ${isOpen ? styles.show : ""}`}>
+                    <Dropdown label="Home" links={[]}></Dropdown>
                     <Dropdown
                         label="About"
                         links={[
@@ -32,12 +33,7 @@ export default function Navbar() {
                             {to: "/problem", label:"Problem"},
                             {to: "/solution", label:"Solution"}
                         ]}>
-
                     </Dropdown>
-                    <li><NavLink className={navLinkClass} to="/team" >Team</NavLink></li>
-                    <li><NavLink className={navLinkClass} to="/problem">Problem</NavLink></li>
-                    <li><NavLink className={navLinkClass} to="/solution">Solution</NavLink></li>
-
                     <Dropdown
                         label="Presentations"
                         links={[

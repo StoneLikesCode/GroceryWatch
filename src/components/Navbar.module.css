@@ -43,6 +43,10 @@
     color: var(--sitegreen);
 }
 
+.navMenu a.active:hover{
+    color: var(--textColor);
+}
+
 .navMenu a:hover {
     padding: 5px;
     border-radius: 10px;
