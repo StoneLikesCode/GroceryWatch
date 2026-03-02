@@ -1,0 +1,16 @@
+.siteFooter {
+    width: 100%;
+    background: linear-gradient(135deg, #222729, #334155);
+    color: #ffffff;
+    border-top: 4px solid var(--sitegreen);
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
+
+.footerContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}

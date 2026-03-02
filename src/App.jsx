@@ -7,6 +7,7 @@ import Solution from './components/Solution'
 import Deliverables from "./pages/Deliverables"
 import References from "./pages/References"
 import Presentations from "./pages/Presentations"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Deliverables" element={<Deliverables/>}></Route>
         <Route path="/References" element={<References/>}></Route>
       </Routes>
+      <Footer></Footer>
     </HashRouter>
   )
 }
