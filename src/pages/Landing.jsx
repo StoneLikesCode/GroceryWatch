@@ -6,10 +6,11 @@ import Solution from "../components/Solution.jsx"
 export default function Landing(){
     return(
         <>
-        <LandingHeader title="Landing Page" tagline="Shop Smart, Eat Well."/>
-        
         <div className={styles.mainContent}>
-            <h1>Landing Page</h1>
+            <LandingHeader 
+                className={styles.landingHeader} 
+                title="GroceryWatch" 
+                tagline="Shop Smart, Eat Well."/>
             <Problem></Problem>
             <Solution></Solution>
         </div>

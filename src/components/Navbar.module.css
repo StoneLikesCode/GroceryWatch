@@ -4,9 +4,15 @@
     align-items: center;
     padding: 0 1.5rem;
     border-bottom: solid var(--sitegreen);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--backgroundColor);
+    height: var(--navHeight);
 }
 
-/* Logo */
+/* logo */
 .siteLogo{ 
     max-width: max-content;
     width: 100px;
@@ -21,7 +27,7 @@
     color: white;
 }
 
-/* Nav menu */
+/* nav menu */
 .navMenu {
     display: flex;
     justify-content: center;
@@ -50,7 +56,7 @@
     background-color: var(--sitegreen);
 }
 
-/* Hamburger */
+/* hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -73,7 +79,7 @@
     transform-origin: center;
 }
 
-/* Animate into X */
+/* animate into X */
 .hamburger.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -87,7 +93,7 @@
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Mobile */
+/* mobile */
 @media (max-width: 768px) {
 
     .nav{ 
