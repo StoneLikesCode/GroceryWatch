@@ -1,11 +1,9 @@
 .nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
     padding: 0 1.5rem;
     border-bottom: solid var(--sitegreen);
-    overflow-x: hidden;
-    position: relative;
 }
 
 /* Logo */
@@ -26,14 +24,12 @@
 /* Nav menu */
 .navMenu {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     list-style: none;
     gap: 2rem;
     margin: 0;
     padding: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .navMenu a {
@@ -91,15 +87,19 @@
     transform: translateY(-7px) rotate(-45deg);
 }
 
-
 /* Mobile */
 @media (max-width: 768px) {
 
+    .nav{ 
+        grid-template-columns: auto 1fr;
+    }
+    
     .hamburger {
         display: flex;
         top: 15px;
         right: 1.5rem;
         z-index: 200;
+        grid-column: 3;
     }
 
     .hamburger.active{

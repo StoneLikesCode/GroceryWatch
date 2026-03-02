@@ -1,0 +1,104 @@
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    font: inherit;
+    color: var(--textColor);
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.dropbtn:hover {
+    background-color: var(--sitegreen);
+}
+
+.dropdownContent {
+    position: absolute;
+    top: 100%;
+    padding-top: 8px;
+    left: 0;
+    background: var(--backgroundColor);
+    border: 1px solid rgba(75, 161, 115, 0.3);
+    border-radius: 10px;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+    z-index: 1000;
+
+    /* animation */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.dropdownContent.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdownContent a {
+    padding: 0.75rem 1rem;
+    display: block;
+    color: var(--textColor);
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.dropdownContent a:hover {
+    background-color: var(--sitegreen);
+    padding: 0.75rem 1rem;
+}
+
+.dropdownContent a:first-child{
+    border-radius: 10px 10px 0 0;
+}
+.dropdownContent a:not(:first-child):not(:last-child){
+    border-radius: 10px 10px 10px 10px;
+}
+
+.dropdownContent a:last-child{
+    border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 768px) {
+    .dropdown {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropbtn {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0;
+        font-size: 1.1rem;
+        border-radius: 0;
+    }
+
+    .dropdownContent {
+        position: static;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        border-radius: 0;
+        padding-left: 1rem;
+        transform: none;
+        transition: opacity 0.2s ease, visibility 0.2s;
+    }
+
+    .dropdownContent a {
+        padding: 0.75rem 0;
+    }
+}

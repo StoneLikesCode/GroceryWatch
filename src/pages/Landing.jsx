@@ -3,7 +3,7 @@ import styles from '../pages/Landing.module.css'
 export default function Landing(){
     return(
         <>
-        <LandingHeader title="Landing Page" description="live laugh love"/>
+        <LandingHeader title="Landing Page" description="Shop Smart, Eat Well."/>
         
         <div className={styles.mainContent}>
             <h1>Landing Page</h1>
