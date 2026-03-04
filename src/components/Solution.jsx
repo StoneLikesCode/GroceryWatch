@@ -3,9 +3,19 @@ import styles from './Solution.module.css'
 
 const features = [
     {
+        title: "Price After Tax",
+        tier: "Premium",
+        description: "View the final all-in price including tax before you shop. Avoid unexpected costs at checkout and plan purchases with greater budgeting confidence.",
+    },
+    {
         title: "Price Comparison",
         tier: "All",
         description: "See prices for individual items across multiple stores side by side",
+    },
+    {
+        title: "Cart Comparision",
+        tier: "Premium",
+        description: "Build your full grocery list and compare the total cost across multiple retailers at once. See which store offers the lowest price for everything in your cart.",
     },
     {
         title: "Price History Tracker",
@@ -21,16 +31,6 @@ const features = [
         title: "Interactive Store Locator",
         tier: "All",
         description: "Find nearby grocery stores instantly using an interactive map interface. Locate the closest stores in real time and plan routes directly within the platform.",
-    },
-    {
-        title: "Cart Comparision",
-        tier: "Premium",
-        description: "Build your full grocery list and compare the total cost across multiple retailers at once. See which store offers the lowest price for everything in your cart.",
-    },
-    {
-        title: "Price After Tax",
-        tier: "Premium",
-        description: "View the final all-in price including tax before you shop. Avoid unexpected costs at checkout and plan purchases with greater budgeting confidence.",
     }
 ]
 
