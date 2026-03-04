@@ -1,10 +1,13 @@
-.presentationsWrapper {
+.wrapper {
     max-width: 1100px;
     margin: 0 auto;
     padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-.presentationCard {
+.card {
     background: #1a2230;
     border: 1px solid rgba(75, 161, 115, 0.2);
     border-radius: 12px;
@@ -12,7 +15,7 @@
     transition: border-color 0.2s ease;
 }
 
-.presentationCard:hover {
+.card:hover {
     border-color: var(--sitegreen);
 }
 
@@ -21,28 +24,36 @@
     border-bottom: 1px solid rgba(75, 161, 115, 0.2);
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
 }
 
 .dot {
     width: 10px;
     height: 10px;
+    min-width: 10px;
     border-radius: 50%;
     background: var(--sitegreen);
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .cardTitle {
-    font-size: 0.95rem;
+    display: block;
+    font-size: 1rem;
     font-weight: 600;
-    opacity: 0.8;
-    color: var(--textColor)
+    color: var(--textColor);
+}
+
+.cardSubtitle {
+    display: block;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 2px;
 }
 
 .iframeWrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 56.25%;
 }
 
 .iframeWrapper iframe {
