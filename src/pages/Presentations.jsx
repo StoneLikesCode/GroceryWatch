@@ -3,6 +3,7 @@ import styles from '../pages/Presentations.module.css'
 
 const presentations = [
     { 
+        id: "presentation1",
         title: "Iteration 1", 
         subtitle: "Spring 2026 - Team Iron",
         src: "https://docs.google.com/presentation/d/e/2PACX-1vTereLRR-9PecaQYJveLFZJ1wQkDoWs21VEV8_bWRWvPrRh8inQNyaWrQJSQMxr2aGHXpi1ht4Rqyfc/pubembed?start=false&loop=false&delayms=3000",
@@ -20,7 +21,7 @@ export default function Presentations() {
 
             <div className={styles.wrapper}>
                 {presentations.map((p, i) => (
-                    <div key={i} className={styles.card}>
+                    <div key={i} id={p.id} className={styles.card}>
                         <div className={styles.cardHeader}>
                             <div className={styles.dot} />
                             <div>
