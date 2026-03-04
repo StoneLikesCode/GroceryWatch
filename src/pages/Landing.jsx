@@ -6,7 +6,7 @@ import Solution from "../components/Solution.jsx"
 export default function Landing(){
     return(
         <>
-        <div className={styles.mainContent}>
+        <div id="home" className={styles.mainContent}>
             <LandingHeader 
                 className={styles.landingHeader} 
                 title="GroceryWatch" 

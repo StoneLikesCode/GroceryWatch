@@ -26,7 +26,7 @@ export default function Navbar() {
                 </div>
 
                 <ul className={`${styles.navMenu} ${isOpen ? styles.show : ""}`}>
-                    <li><NavLink className={styles.navLink} to='/'>Home</NavLink></li>
+                    <li><HashLink className={styles.navLink} smooth to='/#home'>Home</HashLink></li>
                     
                     <li>
                         <Dropdown
