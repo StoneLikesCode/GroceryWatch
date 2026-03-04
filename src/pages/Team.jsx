@@ -12,7 +12,7 @@ export default function Team(){
     return(
     <>  
         <PageHeader title="Team Iron" subtitle="Meet the team behind GroceryWatch" />
-        <div className={styles.grid}> 
+        <div id="team" className={styles.grid}> 
             <Member 
                 name="Sam Garden" 
                 role="Database Lead" 

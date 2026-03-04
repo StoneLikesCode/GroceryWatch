@@ -5,8 +5,10 @@
     --textColor: #ffffff;
     --navHeight: 100px;
 }
-
-[id] { 
+html{ 
+  scroll-behavior: smooth;
+}
+[id]:not(#team){ 
   scroll-margin-top: var(--navHeight);
 }
 

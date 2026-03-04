@@ -32,7 +32,7 @@ export default function Navbar() {
                         <Dropdown
                             label="About"
                             links={[
-                                {to: "/team", label:"Team"},
+                                {to: "/team/#team", label:"Team"},
                                 {to: "/#problem", label:"Problem"},
                                 {to: "/#solution", label:"Solution"}
                             ]}
@@ -44,10 +44,10 @@ export default function Navbar() {
                             link="/presentation"
                             label="Presentations"
                             links={[
-                                {to: "/presentations", label: "View All"},
                                 {to: "/presentations/#presentation1", label: "Presentation 1"},
                                 {to: "/presentations/#presentation2", label: "Presentation 2"},
                                 {to: "/presentations/#presentation3", label: "Presentation 3"},
+                                {to: "/presentations", label: "View All"},
                             ]}
                         />
                     </li>

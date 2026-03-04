@@ -8,11 +8,13 @@ import Deliverables from "./pages/Deliverables"
 import References from "./pages/References"
 import Presentations from "./pages/Presentations"
 import Footer from "./components/Footer"
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
 
   return (
     <HashRouter>
+      <ScrollToTop/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Landing/>}></Route>
