@@ -14,3 +14,10 @@
     font-size: 0.9rem;
     opacity: 0.85;
 }
+
+.siteFooter a{ 
+    color: var(--textColor);
+}
+.siteFooter a:visited{ 
+    color: var(--sitegreen);
+}
