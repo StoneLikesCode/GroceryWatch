@@ -10,6 +10,7 @@
     width: 100%;
     background-color: var(--backgroundColor);
     height: var(--navHeight);
+    z-index: 9000;
 }
 
 /* logo */
