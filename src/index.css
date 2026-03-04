@@ -6,6 +6,10 @@
     --navHeight: 100px;
 }
 
+[id] { 
+  scroll-margin-top: var(--navHeight);
+}
+
 /* CSS reset to reset broswer styling */
 *{
   margin: 0;
