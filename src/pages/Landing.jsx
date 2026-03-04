@@ -11,8 +11,12 @@ export default function Landing(){
                 className={styles.landingHeader} 
                 title="GroceryWatch" 
                 tagline="Shop Smart, Eat Well."/>
-            <Problem></Problem>
-            <Solution></Solution>
+                <div id="problem">
+                    <Problem></Problem>
+                </div>
+                <div id="solution">
+                    <Solution></Solution>
+                </div>
         </div>
     </>
     )

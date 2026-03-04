@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import styles from './Dropdown.module.css';
 
 export default function Dropdown(props){ 
@@ -23,7 +24,7 @@ export default function Dropdown(props){
                     className={`${styles.dropdownContent} ${isOpen ? styles.show : ""}`}
                     onMouseEnter={() =>setIsOpen(true)}>
                         {props.links.map(link => (
-                            <NavLink key={link.to} to={link.to}>{link.label}</NavLink>
+                            <HashLink key={link.to} smooth to={link.to}>{link.label}</HashLink>
                         ))}
                     </div>
                 )}
