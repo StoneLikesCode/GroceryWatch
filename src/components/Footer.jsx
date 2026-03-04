@@ -8,6 +8,8 @@ export default function Footer(){
                 <div className={style.footerContainer}>
                     <p>© {new Date().getFullYear()} Grocery Watch</p>
                     <p>CS410 • Team Iron • Spring 2026</p>
+                    <a href="https://www.odu.edu/">ODU</a>
+                    <a href="https://www.odu.edu/computer-science">CS Department</a>
                 </div>
             </footer>
         </>
