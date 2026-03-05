@@ -12,22 +12,18 @@ const currentFlow = {
         "Spends more than anticipated",
     ],
     system: [
-        null,
-        null,
-        "Displays current prices only\nNo historical pricing data\nNo cross-store aggregation",
-        "Other store prices not visible\nAssumes visible price reflects market",
-        "Promotions may change\nConditional discounts apply\nPrice adjustments possible",
-        "Tax applied\nFinal total calculated",
-        null,
+        "- Displays current prices only\n- No historical pricing data\n- No cross-store aggregation",
+        "- Other store prices not visible\n- Assumes visible price reflects market",
+        "- Promotions may change\n- Conditional discounts apply\n- Price adjustments possible",
+        "- Tax applied\n- Final total calculated",
     ],
     gaps: [
-        null,
         "Budget estimated mentally",
-        "Cannot determine if price is good\nManual comparison required\nLimited transparency",
-        "Decision based on incomplete data\nHabit-driven bias",
-        "Assumes best price\nRunning total unclear",
-        "Unexpected total\nBudget miscalculation",
-        "No price history insight\nNo learning feedback loop\nProcess repeats next week",
+        "- Cannot determine if price is good\n- Manual comparison required\n- Limited transparency",
+        "- Decision based on incomplete data\n- Habit-driven bias",
+        "- Assumes best price\n- Running total unclear",
+        "- Unexpected total\n- Budget miscalculation",
+        "- No price history insight\n- No learning feedback loop\n- Process repeats next week",
     ],
 }
 const solutionFlow = {
@@ -40,53 +36,84 @@ const solutionFlow = {
         "Finalizes purchase",
     ],
     system: [
-        null,
-        "Displays current prices only\nNo historical pricing data\nNo cross-store aggregation",
-        "Other store prices not visible\nAssumes visible price reflects market",
-        "Promotions may change\nConditional discounts apply\nPrice adjustments possible",
-        "Tax applied\nFinal total calculated",
-        null,
+        "- Displays current prices only\n- No historical pricing data\n- No cross-store aggregation",
+        "- Other store prices not visible\n- Assumes visible price reflects market",
+        "- Promotions may change\n- Conditional discounts apply\n- Price adjustments possible",
+        "- Tax applied\n- Final total calculated",
     ],
     gaps: [
-        null,
         "Budget estimated mentally",
-        "Cannot determine if price is good\nManual comparison required\nLimited transparency",
-        "Decision based on incomplete data\nHabit-driven bias",
-        "Unexpected total\nBudget miscalculation",
-        null,
+        "- Cannot determine if price is good\n- Manual comparison required\n- Limited transparency",
+        "- Decision based on incomplete data\n- Habit-driven bias",
+        "- Unexpected total\n- Budget miscalculation",
     ],
 }
 
-function FlowRow({label, steps, color}){ 
-    return(
-        <div>
-
+function FlowRow({ label, steps, color }) {
+    return (
+        <div className={styles.row}>
+            <div className={styles.rowLabel} style={{ borderColor: color, color }}>
+                {label}
+            </div>
+            <div className={styles.steps}>
+                {steps.map((item, i) => (
+                    <div key={i} className={styles.stepWrapper}>
+                        {item ? (
+                            <div className={styles.step} style={{ borderColor: color }}>
+                                {item.split('\n').map((line, j) => (
+                                    <span key={j}>{line}</span>
+                                ))}
+                            </div>
+                        ) : (
+                            <div className={styles.stepEmpty} />
+                        )}
+                        {i < steps.length - 1 && item && (
+                            <div className={styles.arrow}>→</div>
+                        )}
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
 
-function FlowDiagram({title, flow, description}){ 
-    return(
-        <div>
-
+function FlowDiagram({ title, flow, description }) {
+    return (
+        <div className={styles.diagram}>
+            <div className={styles.diagramHeader}>
+                <div className={styles.dot} />
+                <h2 className={styles.diagramTitle}>{title}</h2>
+            </div>
+            {description && <p className={styles.diagramDesc}></p>}
+            <div className={styles.flowGrid}>
+                <FlowRow label="Shopper" steps={flow.shopper} color="var(--sitegreen)" />
+                <FlowRow label={title.includes("Current") ? "Current System" : "GroceryWatch"} steps={flow.system} color="#60a5fa"/>
+                <FlowRow label={title.includes("Current") ? "Inefficiencies / Gaps" : "Improvements"} steps={flow.gaps} color="#f87171"/>
+            </div>
         </div>
     )
 }
 
-export default function ProcessFlows(){ 
-    return( 
+export default function ProcessFlows() {
+    return (
         <>
-            <PageHeader 
+            <PageHeader
                 title="Process Flows"
                 subtitle="How grocery shopping works today vs. with GroceryWatch"
             />
 
-            <div className={''}>
-                <FlowDiagram>
-
-                </FlowDiagram>
+            <div className={styles.wrapper}>
+                <FlowDiagram 
+                    title="Current Process Flow"
+                    description="The existing grocery shopping experience and where it breaks down."
+                    flow={currentFlow}
+                />
+                <FlowDiagram 
+                    title="Solution Process Flow"
+                    description="How GroceryWatch improves the experience at every step."
+                    flow={solutionFlow}
+                />
             </div>
-
         </>
     )
 }
