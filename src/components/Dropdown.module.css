@@ -84,7 +84,6 @@
         text-align: left;
         padding: 1rem 0;
         font-size: 1.1rem;
-        border-radius: 0;
     }
 
     .dropdownContent {
@@ -92,13 +91,29 @@
         border: none;
         box-shadow: none;
         width: 100%;
-        border-radius: 0;
         padding-left: 1rem;
         transform: none;
         transition: opacity 0.2s ease, visibility 0.2s;
+        /* reset desktop hidden state */
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .dropdownContent.show {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
     }
 
     .dropdownContent a {
         padding: 0.75rem 0;
+        border-radius: 0;
+    }
+
+    .dropdownContent a:hover {
+        padding: 0.75rem 0.5rem;
+        border-radius: 6px;
     }
 }
