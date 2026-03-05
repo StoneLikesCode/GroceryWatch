@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 import {HashLink} from 'react-router-hash-link'
 import styles from './Navbar.module.css'
 import siteLogo from '../assets/logo.png'
@@ -7,14 +6,13 @@ import Dropdown from './Dropdown'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
-    const navLinkClass = ({ isActive }) => isActive ? styles.active : ""
 
     return (
         <>
 
             <nav className={styles.nav}>
                 <div className={styles.logo}>
-                    <NavLink to='/'><img className={styles.siteLogo} src={siteLogo}></img></NavLink>
+                    <HashLink smooth to='/'><img className={styles.siteLogo} src={siteLogo}></img></HashLink>
                 </div>
                 <div
                     className={`${styles.hamburger} ${isOpen ? styles.active : ""}`}

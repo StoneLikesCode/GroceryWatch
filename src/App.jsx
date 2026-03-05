@@ -9,6 +9,7 @@ import References from "./pages/References"
 import Presentations from "./pages/Presentations"
 import Footer from "./components/Footer"
 import ScrollToTop from "./components/ScrollToTop"
+import ProcessFlows from "./pages/ProcessFlows"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Presentations" element={<Presentations/>}></Route>
         <Route path="/Deliverables" element={<Deliverables/>}></Route>
         <Route path="/References" element={<References/>}></Route>
+        <Route path="/ProcessFlows" element={<ProcessFlows/>}></Route>
       </Routes>
       <Footer></Footer>
     </HashRouter>
