@@ -39,7 +39,6 @@ export default function Navbar() {
                     
                     <li>
                         <Dropdown
-                            link="/presentation"
                             label="Presentations"
                             links={[
                                 {to: "/presentations/#presentation1", label: "Presentation 1"},
