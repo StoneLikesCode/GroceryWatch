@@ -1,0 +1,257 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.scoreRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+}
+
+.scoreCard {
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.15);
+    border-radius: 10px;
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.2rem;
+    transition: border-color 0.2s ease;
+}
+
+.scoreCard:hover {
+    border-color: rgba(75, 161, 115, 0.4);
+}
+
+.scoreCardUs {
+    border-color: var(--sitegreen);
+    background: rgba(75, 161, 115, 0.07);
+}
+
+.scoreName {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    line-height: 1.3;
+}
+
+.scoreCardUs .scoreName {
+    color: var(--sitegreen);
+}
+
+.scoreValue {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--textColor);
+    line-height: 1.1;
+    margin-top: 0.25rem;
+}
+
+.scoreCardUs .scoreValue {
+    color: var(--sitegreen);
+}
+
+.scoreTotal {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.35);
+    font-weight: 400;
+}
+
+.scoreLabel {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.table thead tr {
+    background: #111820;
+}
+
+.featureCol {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 180px;
+    position: sticky;
+    left: 0;
+    background: #111820;
+    z-index: 1;
+}
+
+.compCol {
+    padding: 0.85rem 0.75rem;
+    text-align: center;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    min-width: 110px;
+    position: relative;
+}
+
+.compColUs {
+    color: var(--sitegreen);
+    background: rgba(75, 161, 115, 0.06);
+}
+
+.usTag {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: 20px;
+    background: var(--sitegreen);
+    color: #fff;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.categoryRow td {
+    background: rgba(75, 161, 115, 0.06);
+    border-top: 1px solid rgba(75, 161, 115, 0.2);
+    border-bottom: 1px solid rgba(75, 161, 115, 0.1);
+}
+
+.categoryLabel {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--sitegreen);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.featureRow {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    transition: background 0.15s ease;
+}
+
+.featureRow:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.featureName {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.8);
+    position: sticky;
+    left: 0;
+    background: var(--backgroundColor);
+    z-index: 1;
+}
+
+.featureRow:hover .featureName {
+    background: #252d38;
+}
+
+.cell {
+    text-align: center;
+    padding: 0.85rem 0.5rem;
+    font-size: 0.85rem;
+}
+
+.cellUs {
+    background: rgba(75, 161, 115, 0.04);
+}
+
+.check {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.35);
+    font-weight: 600;
+}
+
+.checkUs {
+    color: var(--sitegreen);
+    font-size: 1.1rem;
+}
+
+.cross {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 0.9rem;
+}
+
+.partial {
+    font-size: 0.72rem;
+    color: #ffc107;
+    line-height: 1.3;
+    display: inline-block;
+    max-width: 100px;
+}
+
+.diffSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sectionTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--textColor);
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(75, 161, 115, 0.2);
+}
+
+.diffGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.diffCard {
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+    border-radius: 12px;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: border-color 0.2s ease;
+}
+
+.diffCard:hover {
+    border-color: var(--sitegreen);
+}
+
+.diffIcon {
+    font-size: 1.5rem;
+}
+
+.diffTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--textColor);
+    margin: 0;
+}
+
+.diffDesc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+}
