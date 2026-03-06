@@ -1,5 +1,6 @@
 import PageHeader from '../components/PageHeader'
 import styles from '../pages/MFCD.module.css'
+import MFCDImageIteration3 from '../assets/Iteration3mfcd.png'
 
 const userRoles = [
     { id: 'shopper', label: 'Registered Shopper', color: '#4ba173' },
@@ -42,7 +43,7 @@ const components = [
         title: 'Store Discovery',
         icon: '🗺️',
         features: [
-            {name: 'Interactive Store Locator', roles: ['shopper', 'deluxe', 'admin']},
+            { name: 'Interactive Store Locator', roles: ['shopper', 'deluxe', 'admin'] },
         ],
     },
 ]
@@ -110,7 +111,6 @@ export default function MFCD() {
                 title="Major Functional Components Diagram"
                 subtitle="System architecture, features, and role-based access — Current"
             />
-
             <div className={styles.wrapper}>
 
                 {/* legend */}
@@ -154,21 +154,10 @@ export default function MFCD() {
                     </div>
                 </section>
 
-                {/* future iterations placeholder */}
-                <section className={styles.section}>
-                    
+                <section className={styles.section}>     
                     <h2 className={styles.sectionTitle}>Diagram Iterations</h2>
-                    
                     <div className={styles.iterationsGrid}>
-                        <div className={styles.iterCard + ' ' + styles.iterActive}>
-                            <div className={styles.iterDot}/>
-                            <div>
-                                <span className={styles.iterTitle}>Current</span>
-                                <span className={styles.iterSub}>Spring 2026</span>
-                            </div>
-                        </div>
-
-                        {[1, 2, 3].map(n => (
+                        {[1, 2 ].map(n => (
                             <div key={n} className={styles.iterCard + ' ' + styles.iterPlaceholder}>
                                 <div className={styles.iterDotEmpty} />
                                 <div>
@@ -177,7 +166,30 @@ export default function MFCD() {
                                 </div>
                             </div>
                         ))}
-                    </div>
+                        <div className={styles.iterCard + ' ' + styles.iterActive}>
+                            <div className={styles.iterDot} />
+                            <div>
+                                <span className={styles.iterTitle}>Iteration 3 - Current</span>
+                                <span className={styles.iterSub}>Spring 2026</span>
+                            </div>
+                        </div>
+
+                    </div>              
+                    <section className={styles.section}>
+                        <h2 className={styles.sectionTitle}>Major Functional Component Diagrams</h2>
+                        <div className={styles.imageCard}>
+                            <div className={styles.cardHeader}>
+                                <div className={styles.cardDot} />
+                                <div>
+                                    <span className={styles.cardTitle}>Iteration 3 </span> 
+                                    <span className={styles.cardSubtitle}>Spring 2026 — Team Iron</span>
+                                </div>
+                            </div>
+                            <div className={styles.imageWrapper}>
+                                <img src={MFCDImageIteration3} alt="MFCD Iteration 1" />
+                            </div>
+                        </div>
+                    </section>
                 </section>
 
             </div>
