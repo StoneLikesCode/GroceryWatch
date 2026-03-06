@@ -159,7 +159,7 @@
     padding: 4px;
 }
 
-.cell:not(:has(.riskBadge)) {
+.cell:not(:has(.riskBadge)):not(:has(.mitigationBadge)) {
     opacity: 0.35;
 }
 
@@ -292,6 +292,19 @@
     font-weight: 700;
     color: rgba(255, 255, 255, 0.4);
     margin-right: 0.4rem;
+}
+
+.mitigationBadge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    cursor: default;
+    margin: 2px;
+    border: 1px dashed rgba(255,255,255,0.5); /* dashed lines for mitigations */ 
 }
 
 @media (max-width: 700px) {

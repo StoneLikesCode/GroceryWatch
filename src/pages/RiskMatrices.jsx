@@ -53,10 +53,10 @@ const matrices = [
             },
         ],
         mitigations: [
-            { id: 'UM-1', risk: 'UR-1', text: 'Allow users to report price discrepancies.' },
-            { id: 'UM-2', risk: 'UR-2', text: 'Moderate reviews and allow community flagging.' },
-            { id: 'UM-3', risk: 'UR-3', text: 'Implement a rewards system to incentivize participation.' },
-            { id: 'UM-4', risk: 'UR-4', text: 'Allow users to opt out of various data collection.' },
+            { id: 'UM-1', risk: 'UR-1', text: 'Allow users to report price discrepancies.', likelihood: Low, impact: Low},
+            { id: 'UM-2', risk: 'UR-2', text: 'Moderate reviews and allow community flagging.', likelihood: VeryLow, impact: Low},
+            { id: 'UM-3', risk: 'UR-3', text: 'Implement a rewards system to incentivize participation.', likelihood: Low, impact: Low },
+            { id: 'UM-4', risk: 'UR-4', text: 'Allow users to opt out of various data collection.', likelihood: Low, impact: VeryLow },
         ],
     },
     {
@@ -68,20 +68,16 @@ const matrices = [
                 id: 'CR-1',
                 name: 'Inaccurate Prices Damage Store Reputation',
                 description: 'Incorrectly reported prices reflect poorly on partnered stores.',
-                likelihood: Medium,
-                impact: High,
             },
             {
                 id: 'CR-2',
                 name: 'Low Ad Engagement',
                 description: 'Advertisers see poor return on investment due to low click-through rates.',
-                likelihood: Medium,
-                impact: Medium,
             },
         ],
         mitigations: [
-            { id: 'CM-1', risk: 'CR-1', text: 'Use multiple data sources to cross-validate pricing.' },
-            { id: 'CM-2', risk: 'CR-2', text: 'Improve ad targeting through better data integration.' },
+            { id: 'CM-1', risk: 'CR-1', text: 'Use multiple data sources to cross-validate pricing.'},
+            { id: 'CM-2', risk: 'CR-2', text: 'Improve ad targeting through better data integration.'},
         ],
     },
     {
@@ -93,28 +89,22 @@ const matrices = [
                 id: 'TR-1',
                 name: 'Inability to Get Real-Time Pricing',
                 description: 'Failure to access live store pricing data renders the core feature unusable.',
-                likelihood: Medium, 
-                impact: VeryHigh,
             },
             {
                 id: 'TR-2',
                 name: 'Server Downtime',
-                description: 'Application becomes unavailable due to hosting failure.',
-                likelihood: Low, 
-                impact: High,    
+                description: 'Application becomes unavailable due to hosting failure.',    
             },
             {
                 id: 'TR-3',
                 name: 'Data Mismatch for Product or Pricing',
-                description: 'Product or price records become inconsistent across data sources.',
-                likelihood: High, 
-                impact: High,   
+                description: 'Product or price records become inconsistent across data sources.',   
             },
         ],
         mitigations: [
-            { id: 'TM-1', risk: 'TR-1', text: 'Offer store partnerships and use official APIs for direct data access.', likelihood: Low, impact: Medium },
-            { id: 'TM-2', risk: 'TR-2', text: 'Use two hosting services so there is a backup when one goes down.' },
-            { id: 'TM-3', risk: 'TR-3', text: 'Include automatic price updates and allow users to submit issue reports.' },
+            { id: 'TM-1', risk: 'TR-1', text: 'Offer store partnerships and use official APIs for direct data access.'},
+            { id: 'TM-2', risk: 'TR-2', text: 'Use two hosting services so there is a backup when one goes down.'},
+            { id: 'TM-3', risk: 'TR-3', text: 'Include automatic price updates and allow users to submit issue reports.'},
         ],
     },
 ]
@@ -141,6 +131,10 @@ function MatrixGrid({ risks, mitigations }) {
                                 const cellRisks = risks.filter(
                                     r => r.impact === lIdx && r.likelihood === iIdx
                                 )
+                                const cellMitigations = mitigations.filter(
+                                    m => m.likelihood !== undefined &&
+                                         m.impact === lIdx && m.likelihood === iIdx
+                                )
                                 return (
                                     <div
                                         key={iIdx}
@@ -149,6 +143,11 @@ function MatrixGrid({ risks, mitigations }) {
                                         {cellRisks.map(r => (
                                             <span key={r.id} className={styles.riskBadge} title={r.name}>
                                                 {r.id}
+                                            </span>
+                                        ))}
+                                        {cellMitigations.map(m => (
+                                            <span key={m.id} className={styles.mitigationBadge} title={m.text}>
+                                                {m.id}
                                             </span>
                                         ))}
                                     </div>
