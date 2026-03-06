@@ -35,7 +35,7 @@ const matrices = [
                 name: 'Fake Reviews',
                 description: 'Users submit fraudulent store or item reviews.',
                 likelihood: High, 
-                impact: High, 
+                impact: Medium, 
             },
             {
                 id: 'UR-3',
@@ -112,34 +112,34 @@ const matrices = [
             },
         ],
         mitigations: [
-            { id: 'TM-1', risk: 'TR-1', text: 'Offer store partnerships and use official APIs for direct data access.' },
+            { id: 'TM-1', risk: 'TR-1', text: 'Offer store partnerships and use official APIs for direct data access.', likelihood: Low, impact: Medium },
             { id: 'TM-2', risk: 'TR-2', text: 'Use two hosting services so there is a backup when one goes down.' },
             { id: 'TM-3', risk: 'TR-3', text: 'Include automatic price updates and allow users to submit issue reports.' },
         ],
     },
 ]
 
-function MatrixGrid({ risks }) {
+function MatrixGrid({ risks, mitigations }) {
     return (
         <div className={styles.gridWrapper}>
-            <div className={styles.yAxisLabel}>Impact →</div>
+            <div className={styles.yAxisLabel}>Likelihood →</div>
             <div className={styles.grid}>
-                {/* column headers (impact) */}
+                {/* column headers (likelihood) */}
                 <div className={styles.cornerCell} />
-                {IMPACT.map(label => (
+                {LIKELIHOOD.map(label => (
                     <div key={label} className={styles.headerCell}>{label}</div>
                 ))}
 
-                {/* rows (likelihood, high → low) */}
-                {[...LIKELIHOOD].reverse().map((lLabel, rowIdx) => {
-                    const lIdx = LIKELIHOOD.length - 1 - rowIdx
+                {/* rows (Impact, high → low) */}
+                {[...IMPACT].reverse().map((lLabel, rowIdx) => {
+                    const lIdx = IMPACT.length - 1 - rowIdx
                     return (
                         <>
                             <div key={lLabel} className={styles.rowHeader}>{lLabel}</div>
-                            {IMPACT.map((_, iIdx) => {
+                            {LIKELIHOOD.map((_, iIdx) => {
                                 const level = riskLevel(lIdx, iIdx)
                                 const cellRisks = risks.filter(
-                                    r => r.likelihood === lIdx && r.impact === iIdx
+                                    r => r.impact === lIdx && r.likelihood === iIdx
                                 )
                                 return (
                                     <div
@@ -158,7 +158,7 @@ function MatrixGrid({ risks }) {
                     )
                 })}
             </div>
-            <div className={styles.xAxisLabel}>← Likelihood</div>
+            <div className={styles.xAxisLabel}>← Impact</div>
         </div>
     )
 }
@@ -246,7 +246,7 @@ export default function RiskMatrices() {
                         </div>
 
                         <div className={styles.matrixBody}>
-                            <MatrixGrid risks={matrix.risks} />
+                            <MatrixGrid risks={matrix.risks} mitigations={matrix.mitigations}/>
                             <RiskTable risks={matrix.risks} mitigations={matrix.mitigations} />
                         </div>
                     </section>
