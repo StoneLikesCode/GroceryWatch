@@ -4,12 +4,12 @@ import styles from '../pages/Glossary.module.css'
 
 const terms = [
     { term: 'API', category: 'Technical', definition: 'Application Programming Interface — a set of rules that allows different software systems to communicate with each other. Used to fetch real-time pricing data from store systems.' },
-    { term: 'Barcode Scanning', category: 'Feature', definition: 'A feature that allows users to scan a product barcode using their device camera to instantly look up and compare prices across stores.' },
+    // { term: 'Barcode Scanning', category: 'Feature', definition: 'A feature that allows users to scan a product barcode using their device camera to instantly look up and compare prices across stores.' },
     { term: 'Crowdsourced Data', category: 'Data', definition: 'Pricing or product information submitted by app users rather than directly from stores. Relies on community participation to stay accurate and up to date.' },
     { term: 'Customer', category: 'Stakeholder', definition: 'A paying business partner such as a grocery store or advertiser who uses GroceryWatch to reach shoppers or maintain accurate store listings.' },
     { term: 'Data Mismatch', category: 'Risk', definition: 'An inconsistency between product or price records across different data sources, which can lead to incorrect information being shown to users.' },
     { term: 'Engagement', category: 'Metric', definition: 'A measure of how actively users interact with the app — including submitting prices, writing reviews, and using core features regularly.' },
-    { term: 'Flyer Integration', category: 'Feature', definition: 'The ability to import and display weekly store flyers within the app, giving users visibility into current sales and promotions.' },
+    // { term: 'Flyer Integration', category: 'Feature', definition: 'The ability to import and display weekly store flyers within the app, giving users visibility into current sales and promotions.' },
     { term: 'Geolocation', category: 'Technical', definition: 'The use of a device\'s GPS or network data to determine a user\'s physical location, used to surface nearby stores and relevant pricing.' },
     { term: 'GroceryWatch', category: 'Product', definition: 'The name of the grocery price comparison application being developed. Allows users to compare prices across local stores in real time.' },
     { term: 'Impact', category: 'Risk', definition: 'In the context of risk analysis, the severity of harm that would result if a given risk were to occur. Rated from Very Low to Very High.' },
