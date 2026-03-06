@@ -26,6 +26,10 @@ const terms = [
     { term: 'Unit Testing', category: 'Technical', definition: 'A software testing method where individual components or functions are tested in isolation to verify they behave as expected.' },
     { term: 'User', category: 'Stakeholder', definition: 'An end user of the GroceryWatch app — typically a shopper who uses the platform to find the best prices on grocery items near them.' },
     { term: 'UX', category: 'Design', definition: 'User Experience — the overall experience a person has when interacting with the app, including ease of use, visual design, and overall satisfaction.' },
+    { term: 'Anomalous Sale', category: 'Feature', definition: 'A price change pattern where an item’s price is raised shortly before a “sale,” making the discount misleading or minimal.'},
+    { term: 'Historical Price Tracking', category: 'Feature', definition: 'The storage and visualization of past item prices over time to help users identify trends and optimal buying periods.'},
+    { term: 'Price Aggregation', category: 'Feature', definition: 'The process of collecting and combining pricing data from multiple stores into one centralized system.'},
+    // { term: '', category: '', definition: ''},
 ]
 
 const CATEGORY_COLORS = {
