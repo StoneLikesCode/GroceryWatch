@@ -12,6 +12,7 @@ const competitors = [
 ]
 
 // values: if true: check else: x | competitors above correspond with the values. If a competitor has a feature we offer, set values: [true]. If they do not offer the feature, set values: [false]
+// setting values to true will increment the amount of features they offer in comparision to 
 const features = [
     {
         category: 'Price Intelligence',
