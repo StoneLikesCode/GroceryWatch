@@ -1,0 +1,310 @@
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.legend {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem 1.5rem;
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legendDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.legendLabel {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.high   { background: rgba(239, 68,  68,  0.7); }
+.medium { background: rgba(234, 179, 8,   0.7); }
+.low    { background: rgba(75,  161, 115, 0.7); }
+
+.legendDot.high   { background: rgba(239, 68,  68,  0.7); }
+.legendDot.medium { background: rgba(234, 179, 8,   0.7); }
+.legendDot.low    { background: rgba(75,  161, 115, 0.7); }
+
+.matrixSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(75, 161, 115, 0.2);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+    background: var(--sitegreen);
+    margin-top: 7px;
+}
+
+.sectionTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--textColor);
+    margin: 0;
+}
+
+.sectionSubtitle {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0.25rem 0 0;
+}
+
+.matrixBody {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.gridWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.yAxisLabel {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding-left: 68px;
+    margin-bottom: 0.25rem;
+}
+
+.xAxisLabel {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding-left: 68px;
+    margin-top: 0.25rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 68px repeat(5, 1fr);
+    gap: 3px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.cornerCell {
+    background: transparent;
+}
+
+.headerCell {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 0.4rem 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.rowHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+}
+
+.cell {
+    min-height: 56px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px;
+}
+
+.cell:not(:has(.riskBadge)) {
+    opacity: 0.35;
+}
+
+.riskBadge {
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(75, 161, 115, 0.15);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 640px;
+}
+
+.table thead tr {
+    background: #111820;
+}
+
+.table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    transition: background 0.15s ease;
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.idCell {
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--sitegreen);
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.nameCell {
+    padding: 1rem;
+    vertical-align: top;
+}
+
+.riskName {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--textColor);
+    margin-bottom: 0.3rem;
+}
+
+.riskDesc {
+    display: block;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.5;
+}
+
+.centeredCell {
+    padding: 1rem;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+    vertical-align: top;
+    text-align: center;
+}
+
+.levelBadge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.levelBadge.high {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.levelBadge.medium {
+    background: rgba(234, 179, 8, 0.15);
+    color: #facc15;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.levelBadge.low {
+    background: rgba(75, 161, 115, 0.15);
+    color: var(--sitegreen);
+    border: 1px solid rgba(75, 161, 115, 0.3);
+}
+
+.mitigationCell {
+    padding: 1rem;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.mitigationId {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: 0.4rem;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        max-width: 100%;
+    }
+
+    .headerCell {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.1rem;
+    }
+
+    .rowHeader {
+        font-size: 0.6rem;
+    }
+}

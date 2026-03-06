@@ -12,6 +12,7 @@ import ScrollToTop from "./components/ScrollToTop"
 import ProcessFlows from "./pages/ProcessFlows"
 import MFCD from "./pages/MFCD"
 import CompetitionMatrix from "./pages/CompetitionMatrix"
+import RiskMatrices from "./pages/RiskMatrices"
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/ProcessFlows" element={<ProcessFlows/>}></Route>
         <Route path="/MFCD" element={<MFCD/>}></Route>
         <Route path="/CompetitionMatrix" element={<CompetitionMatrix/>}></Route>
+        <Route path="/RiskMatrices" element={<RiskMatrices/>}></Route>
       </Routes>
       <Footer></Footer>
     </HashRouter>
