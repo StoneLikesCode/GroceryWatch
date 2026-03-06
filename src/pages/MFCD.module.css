@@ -1,0 +1,254 @@
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.legendRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem 2rem;
+    padding: 1rem 1.5rem;
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legendLabel {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sectionTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--textColor);
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(75, 161, 115, 0.2);
+}
+
+.compGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.compCard {
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.compCard:hover {
+    border-color: var(--sitegreen);
+}
+
+.compHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(75, 161, 115, 0.15);
+    background: rgba(75, 161, 115, 0.05);
+}
+
+.compIcon {
+    font-size: 1.2rem;
+}
+
+.compTitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--textColor);
+    margin: 0;
+}
+
+.featureList {
+    display: flex;
+    flex-direction: column;
+}
+
+.featureRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.65rem 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.featureRow:last-child {
+    border-bottom: none;
+}
+
+.featureName {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.roleDots {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.premiumTag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: rgba(255, 193, 7, 0.12);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    white-space: nowrap;
+}
+
+.archWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.archLayer {
+    position: relative;
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.15);
+    border-left: 4px solid var(--layer-color);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 1.5rem;
+    transition: border-color 0.2s ease;
+    margin-bottom: 0;
+}
+
+.archLayer:hover {
+    border-color: var(--layer-color);
+    border-left-color: var(--layer-color);
+}
+
+.archLabel {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--layer-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.archItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.archItem {
+    font-size: 0.82rem;
+    padding: 4px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.archArrow {
+    text-align: center;
+    color: rgba(75, 161, 115, 0.5);
+    font-size: 1.2rem;
+    padding: 0.4rem 0;
+    line-height: 1;
+}
+
+.iterationsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.iterCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+    background: #1a2230;
+}
+
+.iterActive {
+    border-color: var(--sitegreen);
+    background: rgba(75, 161, 115, 0.05);
+}
+
+.iterPlaceholder {
+    opacity: 0.45;
+}
+
+.iterDot {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+    background: var(--sitegreen);
+}
+
+.iterDotEmpty {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.iterTitle {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+.iterSub {
+    display: block;
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+    .archLayer {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}
