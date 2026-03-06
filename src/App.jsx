@@ -13,6 +13,7 @@ import ProcessFlows from "./pages/ProcessFlows"
 import MFCD from "./pages/MFCD"
 import CompetitionMatrix from "./pages/CompetitionMatrix"
 import RiskMatrices from "./pages/RiskMatrices"
+import Glossary from "./pages/Glossary"
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/MFCD" element={<MFCD/>}></Route>
         <Route path="/CompetitionMatrix" element={<CompetitionMatrix/>}></Route>
         <Route path="/RiskMatrices" element={<RiskMatrices/>}></Route>
+        <Route path="/Glossary" element={<Glossary/>}></Route>
       </Routes>
       <Footer></Footer>
     </HashRouter>

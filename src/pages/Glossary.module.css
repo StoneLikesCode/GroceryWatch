@@ -1,0 +1,190 @@
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.searchRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searchBox {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+}
+
+.searchInput {
+    width: 100%;
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+    border-radius: 10px;
+    padding: 0.75rem 2.5rem 0.75rem 2.75rem;
+    font-size: 0.9rem;
+    color: var(--textColor);
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.searchInput:focus {
+    border-color: rgba(75, 161, 115, 0.5);
+}
+
+.clearBtn {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 2px 4px;
+    line-height: 1;
+    transition: color 0.15s;
+}
+
+.clearBtn:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.count {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: right;
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.legendTag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.letterHeading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.letter {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--sitegreen);
+    line-height: 1;
+    min-width: 1.5rem;
+}
+
+.letterLine {
+    flex: 1;
+    height: 1px;
+    background: rgba(75, 161, 115, 0.2);
+}
+
+.termsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 2.5rem;
+}
+
+.termCard {
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.1);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.termCard:hover {
+    border-color: rgba(75, 161, 115, 0.3);
+    background: #1e2838;
+}
+
+.termHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.termName {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--textColor);
+}
+
+.categoryTag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+
+.termDef {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.95rem;
+}
+
+.empty strong {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+    .termsList {
+        padding-left: 1.5rem;
+    }
+
+    .searchRow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .count {
+        text-align: left;
+    }
+}
