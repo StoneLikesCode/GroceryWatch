@@ -12,7 +12,7 @@ const VeryHigh = 4
 // risk level determined by likelihood index + impact index
 function riskLevel(lIdx, iIdx) {
     const score = lIdx + iIdx
-    if (score >= 7) return 'high'
+    if (score >= 6) return 'high'
     if (score >= 4) return 'medium'
     return 'low'
 }
