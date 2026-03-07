@@ -14,7 +14,6 @@ import MFCD from "./pages/MFCD"
 import CompetitionMatrix from "./pages/CompetitionMatrix"
 import RiskMatrices from "./pages/RiskMatrices"
 import Glossary from "./pages/Glossary"
-import Refrences from "./pages/References"
 
 function App() {
 
