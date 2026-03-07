@@ -1,0 +1,264 @@
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ── Search ── */
+.searchRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searchBox {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+}
+
+.searchInput {
+    width: 100%;
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+    border-radius: 10px;
+    padding: 0.75rem 2.5rem 0.75rem 2.75rem;
+    font-size: 0.9rem;
+    color: var(--textColor);
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.searchInput:focus {
+    border-color: rgba(75, 161, 115, 0.5);
+}
+
+.clearBtn {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 2px 4px;
+    transition: color 0.15s;
+}
+
+.clearBtn:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.count {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* ── Legend ── */
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.legendTag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+
+/* ── List ── */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ── Card ── */
+.card {
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.1);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.card:hover {
+    border-color: rgba(75, 161, 115, 0.3);
+    background: #1e2838;
+}
+
+.cardTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cardMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.refId {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--sitegreen);
+}
+
+.categoryTag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+
+.usedIn {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* ── Copy button ── */
+.copyBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.45);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+}
+
+.copyBtn:hover {
+    background: rgba(75, 161, 115, 0.1);
+    border-color: rgba(75, 161, 115, 0.35);
+    color: var(--sitegreen);
+}
+
+.copyBtn.copied {
+    background: rgba(75, 161, 115, 0.15);
+    border-color: rgba(75, 161, 115, 0.4);
+    color: var(--sitegreen);
+}
+
+/* ── Content ── */
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--textColor);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.authors {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+.mlaBlock {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 3px solid rgba(75, 161, 115, 0.4);
+    border-radius: 0 6px 6px 0;
+    padding: 0.65rem 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.mlaLabel {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--sitegreen);
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+.mlaText {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    transition: color 0.15s ease;
+    word-break: break-all;
+}
+
+.link:hover {
+    color: var(--sitegreen);
+}
+
+/* ── Empty ── */
+.empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.95rem;
+}
+
+.empty strong {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    .cardTop {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .searchRow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .count {
+        text-align: left;
+    }
+}

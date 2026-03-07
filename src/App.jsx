@@ -14,6 +14,7 @@ import MFCD from "./pages/MFCD"
 import CompetitionMatrix from "./pages/CompetitionMatrix"
 import RiskMatrices from "./pages/RiskMatrices"
 import Glossary from "./pages/Glossary"
+import Refrences from "./pages/References"
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/CompetitionMatrix" element={<CompetitionMatrix/>}></Route>
         <Route path="/RiskMatrices" element={<RiskMatrices/>}></Route>
         <Route path="/Glossary" element={<Glossary/>}></Route>
+        <Route path="/References" element={<References/>}></Route>
       </Routes>
       <Footer></Footer>
     </HashRouter>
