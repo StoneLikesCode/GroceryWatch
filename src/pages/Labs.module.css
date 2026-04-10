@@ -1,0 +1,120 @@
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card {
+    background: #1a2230;
+    border: 1px solid rgba(75, 161, 115, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.card:hover {
+    border-color: var(--sitegreen);
+    background: #1e2838;
+}
+
+.cardLeft {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.labNumber {
+    background: var(--sitegreen);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.labInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.labTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--textColor);
+    margin: 0;
+}
+
+.labDesc {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.cardRight {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-shrink: 0;
+}
+
+.fileMeta {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.35);
+    white-space: nowrap;
+}
+
+.downloadBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    background: rgba(75, 161, 115, 0.15);
+    border: 1px solid rgba(75, 161, 115, 0.3);
+    border-radius: 8px;
+    color: var(--sitegreen);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.downloadBtn:hover {
+    background: var(--sitegreen);
+    border-color: var(--sitegreen);
+    color: #fff;
+}
+
+.downloadBtn svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .cardLeft {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .cardRight {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

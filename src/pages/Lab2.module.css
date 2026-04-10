@@ -1,0 +1,11 @@
+.container {
+  padding: 2rem;
+}
+
+h1 {
+    margin-top: var(--nav-height);
+}
+
+p {
+  color: #555;
+}
