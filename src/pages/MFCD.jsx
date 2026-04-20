@@ -153,28 +153,6 @@ export default function MFCD() {
                         ))}
                     </div>
                 </section>
-
-                <section className={styles.section}>     
-                    <h2 className={styles.sectionTitle}>Diagram Iterations</h2>
-                    <div className={styles.iterationsGrid}>
-                        {[1, 2 ].map(n => (
-                            <div key={n} className={styles.iterCard + ' ' + styles.iterPlaceholder}>
-                                <div className={styles.iterDotEmpty} />
-                                <div>
-                                    <span className={styles.iterTitle}>Iteration {n}</span>
-                                    <span className={styles.iterSub}>Coming soon</span>
-                                </div>
-                            </div>
-                        ))}
-                        <div className={styles.iterCard + ' ' + styles.iterActive}>
-                            <div className={styles.iterDot} />
-                            <div>
-                                <span className={styles.iterTitle}>Iteration 3 - Current</span>
-                                <span className={styles.iterSub}>Spring 2026</span>
-                            </div>
-                        </div>
-
-                    </div>              
                     <section className={styles.section}>
                         <h2 className={styles.sectionTitle}>Major Functional Component Diagrams</h2>
                         <div className={styles.imageCard}>
@@ -190,7 +168,6 @@ export default function MFCD() {
                             </div>
                         </div>
                     </section>
-                </section>
 
             </div>
         </>
