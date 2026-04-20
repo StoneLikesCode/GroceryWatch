@@ -24,7 +24,7 @@ export default function Team(){
                 src={StoneImage}/>
             <Member 
                 name="Blaine" 
-                role="ROLE NEEDED" 
+                role="Frontend Developer" 
                 bio="Blaine is  a Senior Computer Science major at ODU. He is interested in pursuing a career in software engineering after graduation. In his free time, Blaine enjoys both playing and developing video games."
                 src={BlaineImage}/>
             <div className={styles.bottomRow}>
