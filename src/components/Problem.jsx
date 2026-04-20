@@ -72,7 +72,6 @@ export default function Problem() {
 
             <section className={styles.section}>
                 <h2 className={styles.sectionTitle}>The Gap</h2>
-                <p>TODO: ADD GAP IMAGE FROM PRESENTATION</p>
                 <div className={styles.gapGrid}>
                     {[
                         "Lack of transparency with price data across various stores or locales",
