@@ -52,6 +52,7 @@ export default function Navbar() {
                         <Dropdown
                             label="Deliverables"
                             links={[
+                                {to: "/deliverables/#deliverables", label: "View All"},
                                 {to: "/processflows", label: "Process Flows"},
                                 {to: "/mfcd", label: "Major Functional Components Diagram (MFCD)"},
                                 {to: "/competitionmatrix", label: "Competition Matrix"},
