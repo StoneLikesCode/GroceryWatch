@@ -13,6 +13,10 @@ import ProcessFlows from "./pages/ProcessFlows"
 import MFCD from "./pages/MFCD"
 import CompetitionMatrix from "./pages/CompetitionMatrix"
 import RiskMatrices from "./pages/RiskMatrices"
+import WBS from "./pages/WBS"
+import DatabaseSchema from "./pages/DatabaseSchema"
+import Algorithms from "./pages/Algorithms"
+import UXMockups from "./pages/UXMockups"
 import Glossary from "./pages/Glossary"
 import Labs from "./pages/Labs"
 import Lab2 from "./pages/Lab2"
@@ -35,6 +39,10 @@ function App() {
         <Route path="/MFCD" element={<MFCD/>}></Route>
         <Route path="/CompetitionMatrix" element={<CompetitionMatrix/>}></Route>
         <Route path="/RiskMatrices" element={<RiskMatrices/>}></Route>
+        <Route path="/WBS" element={<WBS/>}></Route>
+        <Route path="/DatabaseSchema" element={<DatabaseSchema/>}></Route>
+        <Route path="/Algorithms" element={<Algorithms/>}></Route>
+        <Route path="/UXMockups" element={<UXMockups/>}></Route>
         <Route path="/Glossary" element={<Glossary/>}></Route>
         <Route path="/Labs" element={<Labs/>}></Route>
         <Route path="/labs/lab2" element={<Lab2/>}></Route>

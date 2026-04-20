@@ -42,25 +42,29 @@ const deliverables = [
         icon: '🗂️',
         title: 'WBS Diagrams',
         description: 'Work Breakdown Structure diagrams decomposing the project into deliverable-oriented components across all phases.',
-        status: 'soon',
+        to: '/WBS',
+        status: 'live',
     },
     {
         icon: '🗄️',
         title: 'Database Schema',
         description: 'Entity-relationship diagram and schema definition for the GroceryWatch data layer — users, products, stores, prices, and history.',
-        status: 'soon',
+        to: '/DatabaseSchema',
+        status: 'live',
     },
     {
         icon: '⚙️',
         title: 'Algorithms',
         description: 'Core algorithmic designs including price aggregation, anomalous sale detection, and cart-level store comparison logic.',
-        status: 'soon',
+        to: '/Algorithms',
+        status: 'live',
     },
     {
         icon: '🎨',
         title: 'UI/UX Mockups',
         description: 'High-fidelity wireframes and design mockups for key screens including the cart builder, price history graphs, and store locator.',
-        status: 'soon',
+        to: '/UXMockups',
+        status: 'live',
     },
 ]
 

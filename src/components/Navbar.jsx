@@ -44,7 +44,6 @@ export default function Navbar() {
                                 {to: "/presentations/#presentation1", label: "Presentation 1"},
                                 {to: "/presentations/#presentation2", label: "Presentation 2"},
                                 {to: "/presentations/#presentation3", label: "Presentation 3"},
-                                {to: "/presentations", label: "View All"},
                             ]}
                         />
                     </li>
@@ -57,6 +56,10 @@ export default function Navbar() {
                                 {to: "/mfcd", label: "Major Functional Components Diagram (MFCD)"},
                                 {to: "/competitionmatrix", label: "Competition Matrix"},
                                 {to: "/riskmatrices", label: "Risk Matrices"},
+                                {to: "/wbs", label: "WBS Diagrams"},
+                                {to: "/databaseschema", label: "Database Schema"},
+                                {to: "/algorithms", label: "Algorithms"},
+                                {to: "/uxmockups", label: "UI/UX Mockups"},
                             ]}
                         />
                     </li>
