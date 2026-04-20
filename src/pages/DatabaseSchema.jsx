@@ -1,5 +1,8 @@
 import PageHeader from '../components/PageHeader'
 import styles from './DatabaseSchema.module.css'
+import erdSvg from '../assets/GroceryWatch ERD.svg'
+import keySvg from '../assets/Key.svg'
+import FullscreenViewer from '../components/FullscreenViewer'
 
 const tables = [
     {
@@ -201,6 +204,13 @@ export default function DatabaseSchema() {
                 subtitle="Entity-relationship model for the GroceryWatch data layer"
             />
             <div className={styles.wrapper}>
+
+                <section className={styles.section}>
+                    <h2 className={styles.sectionTitle}>ER Diagram</h2>
+                    <div className={styles.diagramWrap}>
+                        <img src={erdSvg} alt="GroceryWatch ERD" style={{ width: '100%', maxWidth: 1200 }} />
+                    </div>
+                </section>
 
                 <section className={styles.section}>
                     <h2 className={styles.sectionTitle}>Entity Tables</h2>

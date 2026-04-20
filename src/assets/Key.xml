@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Xp30rPw5efN3w__TZcMR">
+    <mxGraphModel dx="1201" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;strokeWidth=0;opacity=50;" value="" vertex="1">
+          <mxGeometry height="460" width="240" x="90" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;strokeWidth=0;opacity=50;" value="&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;KEY&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="90" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-3" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="START" vertex="1">
+          <mxGeometry height="60" width="170" x="130" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="&lt;b&gt;DECISION&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="120" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-5" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" value="&lt;b&gt;END&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="150" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;PROCESS&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="120" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fillColor=#008a00;strokeColor=#005700;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="590" as="sourcePoint" />
+            <mxPoint x="290" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fillColor=#a20025;strokeColor=#6F0000;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="640" as="sourcePoint" />
+            <mxPoint x="290" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;YES&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="180" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzw6zIB4FFpTBHAqMzba-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;NO&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="180" y="620" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

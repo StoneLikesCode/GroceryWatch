@@ -4,12 +4,18 @@ import imgProductMatching from '../assets/productmatchingalgo.png'
 import imgAnomalousSale from '../assets/anomaloussaledetection.png'
 import imgPriceComparison from '../assets/pricecomparisonalgo.png'
 import imgWebScraping from '../assets/webscrapingpipelinealgo.png'
+import productMatchingSvg from '../assets/Product Matching Algorithm.svg'
+import anomalousSaleSvg from '../assets/Anomalous Sale Detection Algorithm.svg'
+import priceComparisonSvg from '../assets/Price Comparison Algorithm.svg'
+import webScrapingSvg from '../assets/Web Scraping Pipeline.svg'
+import FullscreenViewer from '../components/FullscreenViewer'
 
 const algorithms = [
     {
         id: 'product-matching',
         icon: '🔍',
         image: imgProductMatching,
+        svg: productMatchingSvg,
         title: 'Product Matching Algorithm',
         description: 'UPC/GTN normalization as primary identifier; fuzzy matching on brand, size, quantity, and unit for products without standard codes. Confidence scoring with a manual review queue for low-confidence matches.',
         steps: [
@@ -30,6 +36,7 @@ const algorithms = [
         id: 'anomalous-sale',
         icon: '📉',
         image: imgAnomalousSale,
+        svg: anomalousSaleSvg,
         title: 'Anomalous Sale Detection Algorithm',
         description: 'Detects price spikes before sales using rolling average comparison (7/30/90-day windows). Flags "misleading discounts" with confidence scores when sale price ≥ recent baseline. Statistical outlier detection (Z-score) for sudden changes.',
         steps: [
@@ -51,6 +58,7 @@ const algorithms = [
         id: 'price-comparison',
         icon: '🛒',
         image: imgPriceComparison,
+        svg: priceComparisonSvg,
         title: 'Price Comparison / Cart Comparison Algorithm',
         description: 'Real-time aggregation of cart items across stores within a user-defined radius. Per-item and total cost ranking with tax calculation by jurisdiction. Substitution suggestions when exact matches are unavailable; optimization for partial-cart splits across stores.',
         steps: [
@@ -73,6 +81,7 @@ const algorithms = [
         id: 'web-scraping',
         icon: '🌐',
         image: imgWebScraping,
+        svg: webScrapingSvg,
         title: 'Web Scraping Pipeline',
         description: 'Scheduled scraping jobs (Scrapy/Selenium) for retailer websites with rate limiting and proxy rotation. Data validation layer for price/inventory anomalies. Fallback to partner APIs and user-submitted receipts for stores without a web presence.',
         steps: [
@@ -130,11 +139,15 @@ export default function Algorithms() {
                             <h2 className={styles.algoTitle}>{algo.title}</h2>
                         </div>
                         <p className={styles.algoDesc}>{algo.description}</p>
-                        {algo.image && (
-                            <div className={styles.diagramWrap}>
-                                <img src={algo.image} alt={`${algo.title} diagram`} className={styles.diagramImage} />
-                            </div>
-                        )}
+                            {algo.svg ? (
+                                <div className={styles.diagramWrap}>
+                                    <FullscreenViewer src={algo.svg} alt={`${algo.title} diagram`} title={algo.title} />
+                                </div>
+                            ) : algo.image ? (
+                                <div className={styles.diagramWrap}>
+                                    <FullscreenViewer src={algo.image} alt={`${algo.title} diagram`} title={algo.title} />
+                                </div>
+                            ) : null}
                         <div className={styles.flowLabel}>Process Flow</div>
                         <div className={styles.stepList}>
                             {algo.steps.map((step, i) => (
