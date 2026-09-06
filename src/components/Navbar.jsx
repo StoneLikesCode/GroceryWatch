@@ -77,8 +77,6 @@ export default function Navbar() {
                             label="Labs"
                             links={[
                                 {to: "/labs", label: "Lab 1"},
-                                {to: "/labs/lab2", label: "Lab 2"},
-                                // {to: "/labs/lab3", label: "Lab 3"},
                             ]}
                         />
                     </li>

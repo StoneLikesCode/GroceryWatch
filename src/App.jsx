@@ -19,7 +19,6 @@ import Algorithms from "./pages/Algorithms"
 import UXMockups from "./pages/UXMockups"
 import Glossary from "./pages/Glossary"
 import Labs from "./pages/Labs"
-import Lab2 from "./pages/Lab2"
 
 function App() {
 
@@ -45,7 +44,6 @@ function App() {
         <Route path="/UXMockups" element={<UXMockups/>}></Route>
         <Route path="/Glossary" element={<Glossary/>}></Route>
         <Route path="/Labs" element={<Labs/>}></Route>
-        <Route path="/labs/lab2" element={<Lab2/>}></Route>
         <Route path="/References" element={<References/>}></Route>
       </Routes>
       <Footer></Footer>

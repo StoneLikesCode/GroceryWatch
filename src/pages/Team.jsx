@@ -23,7 +23,7 @@ export default function Team(){
                 bio="Stone is a Senior Computer Science student at ODU with a passion for web development and game development. When he's not coding, you can find him painting, playing tabletop games, or spending time with his dog and cat."
                 src={StoneImage}/>
             <Member 
-                name="Blaine" 
+                name="Blaine Langlois" 
                 role="Frontend Developer" 
                 bio="Blaine is  a Senior Computer Science major at ODU. He is interested in pursuing a career in software engineering after graduation. In his free time, Blaine enjoys both playing and developing video games."
                 src={BlaineImage}/>
@@ -34,7 +34,7 @@ export default function Team(){
                     bio="Aaron is a Senior Computer Science major at ODU. He is also studying for a minor in Computer Engineering. In his free time he enjoys reading books and playing both board games and video games with friends."
                     src={AaronImage}/>
                 <Member 
-                    name="Jordan" 
+                    name="Jordan Dossou" 
                     role="Documentation Specialist" 
                     bio="Jordan is a Senior Computer Science major at ODU. He has background in Mathematics, Biology, and Organic Chemistry. He is pursuing a Master's Degree in Computer Science and hopes to join a top tech company."
                     src={JordanImage}/>
