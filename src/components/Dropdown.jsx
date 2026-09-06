@@ -5,6 +5,14 @@ import styles from './Dropdown.module.css';
 export default function Dropdown(props){ 
     const [isOpen, setIsOpen] = useState(false);
 
+    if (props.links?.length === 1) {
+        return (
+            <HashLink className={styles.dropbtn} smooth to={props.links[0].to}>
+                {props.label}
+            </HashLink>
+        )
+    }
+
     return(
         <>
         <div
