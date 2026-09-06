@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/GroceryWatchWEBSITE/',
+  base: '/GroceryWatch/',
   plugins: [
     react(),
     // Dev-server middleware to set a permissive CSP for framing diagrams.net during local development.
