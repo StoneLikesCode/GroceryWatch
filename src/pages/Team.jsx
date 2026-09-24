@@ -8,6 +8,7 @@ import AaronImage from '../assets/Aaron.jpg'
 import BlaineImage from '../assets/Blaine.jpg'
 import KyleImage from '../assets/Kyle.png'
 import PeterImage from '../assets/Peter.png'
+import JoshuaImage from '../assets/Joshua.png'
 
 export default function Team(){ 
     return(
@@ -50,6 +51,11 @@ export default function Team(){
                     role="Mentor"
                     bio="Senior Software Engineer with Tegria Class of 2014 ODU graduate with a Bachelors of Science in Computer Science and minor in mathematics. They   say I have the best of both words being a father of a son and daughter sharing my passion for surfing, fishing, and other action sports with them. When I'm not working my remote job, you can find me at the beach or coaching my sons t-ball team or my daughters dance class. I'm busy as the next person they say."
                     src={PeterImage}/>
+                <Member
+                    name="Joshua Harris"
+                    role="Presentation Specialist"
+                    bio="Joshua Harris is a senior Computer Science major at Old Dominion University, currently completing his final semester toward his B.S. He served in the U.S. Marine Corps as an 1142 Electrical Equipment Repair Specialist. At 36, he balances school with family life and spends most of his free time with his children or gaming."
+                    src={JoshuaImage}/>
             </div>
         </div>
     </>
