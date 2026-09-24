@@ -6,6 +6,8 @@ import SamImage from '../assets/Sam.jpg'
 import JordanImage from '../assets/Jordan.jpg'
 import AaronImage from '../assets/Aaron.jpg'
 import BlaineImage from '../assets/Blaine.jpg'
+import KyleImage from '../assets/Kyle.png'
+import PeterImage from '../assets/Peter.png'
 
 export default function Team(){ 
     return(
@@ -38,6 +40,16 @@ export default function Team(){
                     role="Documentation Specialist" 
                     bio="Jordan is a Senior Computer Science major at ODU. He has background in Mathematics, Biology, and Organic Chemistry. He is pursuing a Master's Degree in Computer Science and hopes to join a top tech company."
                     src={JordanImage}/>
+                <Member 
+                    name="Kyle Pait"
+                    role="Mentor"
+                    bio="Software engineer with Booz Allen Hamilton and ODU graduate with a bachelors degree in computer science and biology. I'm a father of two and enjoy sharing my hobbies of surfing, soccer and video games with both my boys."
+                    src={KyleImage}/>
+                <Member 
+                    name="Peter Langlands"
+                    role="Mentor"
+                    bio="Senior Software Engineer with Tegria Class of 2014 ODU graduate with a Bachelors of Science in Computer Science and minor in mathematics. They   say I have the best of both words being a father of a son and daughter sharing my passion for surfing, fishing, and other action sports with them. When I'm not working my remote job, you can find me at the beach or coaching my sons t-ball team or my daughters dance class. I'm busy as the next person they say."
+                    src={PeterImage}/>
             </div>
         </div>
     </>
