@@ -11,10 +11,11 @@ export default defineConfig({
       name: 'dev-csp-headers',
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
-          // Allow framing from app.diagrams.net for interactive embeds in dev only.
+          // Allow diagrams.net to frame this app, and allow this app to embed
+          // Google Docs, Drive, and Slides used by the labs and presentations pages.
           res.setHeader(
             'Content-Security-Policy',
-            "default-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self' https://app.diagrams.net;"
+            "default-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://docs.google.com https://drive.google.com https://app.diagrams.net; frame-ancestors 'self' https://app.diagrams.net;"
           )
           next()
         })
