@@ -47,6 +47,7 @@ const members = [
             { id: 'draft-1', label: 'Lab 1 Draft 1', src: previewUrl('1ZCSL57QSROCxhbQwGWn6WRfBQguExT7d') },
             { id: 'draft-2', label: 'Lab 1 Draft 2', src: previewUrl('1gj9BFiw0uBd06iteTSkayPTto3gx6IFO') },
             { id: 'draft-3', label: 'Lab 1 Draft 3', src: previewUrl('1GDPzmWmnraaOjdts797_RtkEJNUEzr4u') },
+            { id: 'version-1', label: 'Lab 1 Version 1', src: previewUrl('15OODlCKJBTDNI3JR8Zo5S-IdB5eDYD8B') },
         ],
     },
     {
