@@ -57,6 +57,7 @@ const members = [
             { id: 'draft-1', label: 'Lab 1 Draft 1', src: previewUrl('1TWTn0MUNVXCKJDKgejI1YLVvV3NNfrIu') },
             { id: 'draft-2', label: 'Lab 1 Draft 2', src: previewUrl('1ojGohp9wXSezfPqgCpdXuoH5VWry0HLt') },
             { id: 'draft-3', label: 'Lab 1 Draft 3', src: previewUrl('1n6_Zgbq2Ehf5TTHd-DCJZNwBIoORkN96') },
+            { id: 'version-1', label: 'Lab 1 Version 1', src: previewUrl('1zbDkqIdBVCmRuksGgVZgGK7kwucW-ALJ') },
         ],
     },
     {
@@ -66,6 +67,7 @@ const members = [
             { id: 'draft-1', label: 'Lab 1 Draft 1', src: drivePreviewUrl('1iEPhWOaCBNjop-XyAcMo5hLmtk5-OQKJ') },
             { id: 'draft-2', label: 'Lab 1 Draft 2', src: drivePreviewUrl('1qmDLuWS7QMS63kLAbT7pF2uh3ndoS-e4') },
             { id: 'draft-3', label: 'Lab 1 Draft 3', src: drivePreviewUrl('14yaF7BY0PcbnRUkxS4tmI-0xvZv_nTlB') },
+            { id: 'version-1', label: 'Lab 1 Version 1', src: drivePreviewUrl('1OPavAu6iFqR4Ss3MSJpMeJhNU6Pbivx-') },
         ],
     },
 ]
